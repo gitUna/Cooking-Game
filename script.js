@@ -22,7 +22,7 @@ const order = {
 
   // Display orders
   displayBox: function () {
-    for (let x = 1, y = 1000; x < 6; x++, y += 1500) {
+    for (let x = 1, y = 1000; x < 6; x++, y += 9000 / x) {
       let usedOrder = this.allOrders[x - 1];
       let currentOrder = document.getElementById(`order${x}`);
 
