@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cooking game</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div id="content">
+      <div class="header">
+        <h1>Let's prepare</h1>
+        <p class="subtitle">a candy salad</p>
+        <div class="point-bar">
+          <p class="normal current-orders">Current orders:</p>
+          <p id="points" class="normal">Your score: 0 points</p>
+        </div>
+      </div>
+      <div id="ordersAndClock">
+        <div class="orders flex">
+          <div id="order5" class="orderClass">
+            <p class="time">Time left:</p>
+            <div id="clock5" class="clock"></div>
+          </div>
+          <div id="order4" class="orderClass">
+            <p class="time">Time left:</p>
+            <div id="clock4" class="clock"></div>
+          </div>
+          <div id="order3" class="orderClass">
+            <p class="time">Time left:</p>
+            <div id="clock3" class="clock"></div>
+          </div>
+          <div id="order2" class="orderClass">
+            <p class="time">Time left:</p>
+            <div id="clock2" class="clock"></div>
+          </div>
+          <div id="order1" class="orderClass">
+            <p class="time">Time left:</p>
+            <div id="clock1" class="clock"></div>
+          </div>
+        </div>
+      </div>
+      <div class="flex bottom-part">
+        <div class="choice flex">
+          <div class="components">
+            <p class="normal">Select ingredients:</p>
+            <div id="jelly" class="ingredient" onmouseover="mouseoverAct()">
+              <p>jelly</p>
+            </div>
+            <div
+              id="marshmallows"
+              class="ingredient"
+              onmouseover="mouseoverAct()"
+            >
+              <p>marshmallows</p>
+            </div>
+            <div id="toffee" class="ingredient" onmouseover="mouseoverAct()">
+              <p>toffee</p>
+            </div>
+          </div>
+        </div>
+        <div class="confirm-result">
+          <p class="points-info">You have to get 40 points to win</p>
+          <div id="confirm">Confirm</div>
+        </div>
+        <div>
+          <p class="normal">Your selection:</p>
+          <div id="chosenItems"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
