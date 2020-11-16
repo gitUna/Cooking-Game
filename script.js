@@ -85,7 +85,9 @@ const order = {
       z.innerHTML = "<p class='you-failed'>Time <br><span>is up</span><p>";
       if (this.checkFailed() === true) {
         document.querySelector(".bottom-part").style.pointerEvents = "none";
-        alert("You have failed. Reload the page to play again");
+        if(points < 40){
+           alert("You have failed. Reload the page to play again");
+           }
       }
     }
   },
