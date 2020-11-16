@@ -34,6 +34,7 @@ h1 {
 }
 .flex {
   display: flex;
+  flex-direction: row-reverse;
 }
 .choice {
   justify-content: center;
